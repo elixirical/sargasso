@@ -4,8 +4,8 @@ Sargasso is my attempt at creating a web client for the board game [Shipwreck Ar
 
 ## Requirements
 
-Sargasso is built using [Vue](https://vuejs.org/), [Boardgame.io](https://boardgame.io/), and whatever other library I haphazardly tack on because it has useful functionality with no regard to bloat. 
+Sargasso is built using [React](https://reactjs.org/), [Boardgame.io](https://boardgame.io/), and whatever other library I haphazardly tack on because it has useful functionality with no regard to bloat. 
 
 ## Disclaimer
 
-I have no affiliation whatsoever with Shipwreck Arcana or Meromorph games, who are the legal owners of this property. I simply enjoy the game. If you enjoy the game as well, please buy a [physical copy](https://www.meromorphgames.com/shop/shipwreck-arcana) to support the original publishers. I will gladly take down this github repository if asked to by Meromorph Games!
+I have no affiliation whatsoever with Shipwreck Arcana or Meromorph games, who are the legal owners of this property. I simply enjoy the game. If you find yourself enjoying the game as well, please buy a [physical copy](https://www.meromorphgames.com/shop/shipwreck-arcana) to support the original authors and publishers. I will gladly take down this github repository if asked to by Meromorph Games!
