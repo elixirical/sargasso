@@ -1,17 +1,22 @@
 //import { INVALID_MOVE } from 'boardgame.io/core';
+import { Cards } from "./cards"
+import { Tokens, PlayerTokens } from "./tokens"
 
-const cards = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
-const tokens = [1,1,1,2,2,2,3,3,3,4,4,4,5,5,5,6,6,6,7,7,7]
+//const cards = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+//const tokens = [1,1,1,2,2,2,3,3,3,4,4,4,5,5,5,6,6,6,7,7,7]
 
 export const Sargasso = {
     setup: G => ({
-        deck: cards,
-        tokenPile: tokens,
+        deck: Cards,
+        tokenPile: Tokens,
         doom: -1,
         score: 0,
         board: [],
         fades: [],
     }),
+
+    minPlayers: 1,
+    maxPlayers: 5,
 
     //turn: {
 
@@ -33,7 +38,8 @@ export const Sargasso = {
                     G.board.push(G.deck.pop())
                 }
             },
-            endIf: G => (G.doom >= 0),
+            endIf: G => ((G.doom >= 0)/*, { next: '0' }*/),
+            //next: '0',
         },
     },
 }
