@@ -21,3 +21,11 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# reference stuff
+/blank_card_templates
+PnP+Tarot+Cards.pdf
+shipwreck_arcana_rules_v0.1.pdf
+
+# these are probably copyrighted
+/src/images

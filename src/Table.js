@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import Button from 'react-bootstrap/Button'
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
 
@@ -21,7 +21,7 @@ function MainPanel ({ctx, G, moves}) {
 
   let cells = [];
   for (let n = 0; n <=3; n++) {
-    cells.push(<td>{G.board[n]}</td>);
+    cells.push(<td>{G.board[n].name}</td>);
   }
   body.push(<tr>{cells}</tr>)
 
@@ -61,6 +61,13 @@ function SetDoomScreen ({ctx, G, moves}) {
   );
 }
 
+class CardImage extends React.Component {
+  render() {
+    return(
+      <img src={require('./images/'+this.props.value+".png")}/>
+    )
+  }
+}
 
 // Doom_clock deck                        |   Player 1 counters
 // card1      card2     card3     card4   |   Player 2 counters
