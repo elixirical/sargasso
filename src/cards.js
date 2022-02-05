@@ -1,15 +1,15 @@
-class Arcana {
-  constructor(name, text, fatesPlayable, moons, fade) {
-    this.name = name;
-    this.text = text;
-    this.fatesPlayable = fatesPlayable;
-    this.moons = moons;
-    this.fade = fade;
-  }
-}
+// class Arcana {
+//   constructor(name, text, fatesPlayable, moons, fade) {
+//     this.name = name;
+//     this.text = text;
+//     this.fatesPlayable = fatesPlayable;
+//     this.moons = moons;
+//     this.fade = fade;
+//   }
+// }
 
 class Fade {
-  constructor(fadeName,text, target, move) {
+  constructor(fadeName, text, target, move) {
     this.name = fadeName;
     this.text = text;
     this.target = target; //group or active player?
@@ -35,110 +35,126 @@ const fadeTwice = new Fade("Twice","Before making a prediction, the group may"+
                          " discard this to make one extra prediction this turn")
 */
 
-
-
 var TheBeast = {
   name: "thebeast",
   moons: 1,
-  fade: "twice"
-}
+  fade: "twice",
+};
 var TheBelltower = {
   name: "thebelltower",
   moons: 2,
-  fade: "discardlower"
-}
+  fade: "discardlower",
+};
 var TheBlindMan = {
   name: "theblindman",
   moons: 1,
-  fade: "147"
-}
+  fade: "147",
+};
 var TheChalice = {
   name: "thechalice",
   moons: 2,
-  fade: "147"
-}
+  fade: "147",
+};
 var Dawn = {
   name: "dawn",
   moons: 3,
-  fade: "higherthan"
-}
+  fade: "higherthan",
+};
 var TheDeep = {
   name: "thedeep",
   moons: 3,
-  fade: "higherthan"
-}
+  fade: "higherthan",
+};
 var TheEngine = {
   name: "theengine",
   moons: 3,
-  fade: "567"
-}
+  fade: "567",
+};
 var TheHuntress = {
   name: "thehuntress",
   moons: 1,
-  fade: "twice"
-}
+  fade: "twice",
+};
 var TheJudge = {
   name: "thejudge",
   moons: 3,
-  fade: "345"
-}
+  fade: "345",
+};
 var TheKey = {
   name: "thekey",
   moons: 3,
-  fade: "old"
-}
+  fade: "old",
+};
 var Leviathan = {
   name: "leviathan",
   moons: 4,
-  fade: "discardlower"
-}
+  fade: "discardlower",
+};
 var TheLord = {
   name: "thelord",
   moons: 3,
-  fade: "567"
-}
+  fade: "567",
+};
 var Midnight = {
-  name: "themidnight",
+  name: "midnight",
   moons: 3,
-  fade: "higherthan"
-}
+  fade: "higherthan",
+};
 var TheMirror = {
   name: "themirror",
   moons: 1,
-  fade: "twice"
-}
+  fade: "twice",
+};
 var TheNoble = {
   name: "thenoble",
   moons: 3,
-  fade: "345"
-}
+  fade: "345",
+};
 var TheProphet = {
   name: "theprophet",
   moons: 2,
-  fade: "cycle"
-}
+  fade: "cycle",
+};
 var TheRider = {
   name: "therider",
   moons: 2,
-  fade: "cycle"
-}
+  fade: "cycle",
+};
 var TheServant = {
   name: "theservant",
   moons: 2,
-  fade: "123"
-}
+  fade: "123",
+};
 var TheShore = {
   name: "theshore",
   moons: 4,
-  fade: "discardlower"
-}
+  fade: "discardlower",
+};
 var TheStranger = {
   name: "thestranger",
   moons: 3,
-  fade: "123"
-}
+  fade: "123",
+};
 
-export const Cards = [TheBeast,TheBelltower,TheBlindMan,TheChalice,Dawn,TheDeep,
-                      TheEngine,TheHuntress,TheJudge,TheKey,Leviathan,TheLord,
-                      Midnight,TheMirror,TheNoble,TheProphet,TheRider,TheServant,
-                      TheShore,TheStranger];
+export const Cards = [
+  TheBeast,
+  TheBelltower,
+  TheBlindMan,
+  TheChalice,
+  Dawn,
+  TheDeep,
+  TheEngine,
+  TheHuntress,
+  TheJudge,
+  TheKey,
+  Leviathan,
+  TheLord,
+  Midnight,
+  TheMirror,
+  TheNoble,
+  TheProphet,
+  TheRider,
+  TheServant,
+  TheShore,
+  TheStranger,
+];

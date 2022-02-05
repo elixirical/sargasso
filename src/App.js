@@ -1,7 +1,7 @@
-import { Client } from 'boardgame.io/react';
-import { Sargasso } from './Game';
-import { GameBoard } from './Table.js'
-import { Local } from 'boardgame.io/multiplayer'
+import { Client } from "boardgame.io/react";
+import { Sargasso } from "./Game";
+import { GameBoard } from "./UserClient.js";
+import { Local } from "boardgame.io/multiplayer";
 
 const SargassoClient = Client({
   game: Sargasso,

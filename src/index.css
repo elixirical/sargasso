@@ -48,3 +48,11 @@ code {
 .bottom {
   width: 100%;
 }
+
+.cardpic {
+  max-width: 100%;
+}
+
+tr {
+  width: 100%;
+}
