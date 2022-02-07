@@ -26,9 +26,7 @@ export const Sargasso = {
     SetDoom: (G, ctx, n) => {
       G.doom = n;
     },
-    drawFate: (G, ctx) => {
-        
-    },
+    drawFate: (G, ctx) => {},
     playFate: (G, ctx) => {},
     predict: (G, ctx) => {},
     fadeArcana: (G, ctx) => {},

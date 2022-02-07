@@ -17,10 +17,11 @@ export function GameBoard({ ctx, G, moves }) {
     ];
 }
 
-function MainPanel({ ctx, G, moves }) { // this panel draws the primary game board where the arcana and played fate tokens are 
+function MainPanel({ ctx, G, moves }) {
+  // this panel draws the primary game board where the arcana and played fate tokens are
 
   var cells = G.board.map((x) => <td key={x.name}>{CardImage(x.name)}</td>);
-  cells.unshift(CardImage("clock"))
+  cells.unshift(CardImage("clock"));
 
   return (
     <div key={"mainpanel"} className="left">
@@ -33,7 +34,8 @@ function MainPanel({ ctx, G, moves }) { // this panel draws the primary game boa
   );
 }
 
-function PlayersPanel({ ctx, G, moves }) { // this panel on the right shows the other players in the game and their counters
+function PlayersPanel({ ctx, G, moves }) {
+  // this panel on the right shows the other players in the game and their counters
   return (
     <div key={"playerpanel"} className="right">
       test
@@ -41,7 +43,8 @@ function PlayersPanel({ ctx, G, moves }) { // this panel on the right shows the 
   );
 }
 
-function BottomPanel({ ctx, G, moves }) { // this component draws the bottom panel where ones fates and counters are
+function BottomPanel({ ctx, G, moves }) {
+  // this component draws the bottom panel where ones fates and counters are
   return (
     <div key={"bottompanel"} className="bottom">
       1 2 3 4 5 6 7
@@ -50,14 +53,11 @@ function BottomPanel({ ctx, G, moves }) { // this component draws the bottom pan
 }
 
 function drawnFates({ ctx, G }) {
-  return(
-    <>
-    </>
-  );
+  return <></>;
 }
 
-
-function SetDoomScreen({ ctx, G, moves }) { // this component draws the initial phase of the game where difficulty (ie. doom) is selected
+function SetDoomScreen({ ctx, G, moves }) {
+  // this component draws the initial phase of the game where difficulty (ie. doom) is selected
   const setDoom = (n) => moves.SetDoom(n);
 
   return (
@@ -84,9 +84,9 @@ function SetDoomScreen({ ctx, G, moves }) { // this component draws the initial 
 }
 
 function CardImage(filename) {
-  return(
+  return (
     <img className="cardpic" src={require("./images/" + filename + ".png")} />
-  )
+  );
 }
 
 // class CardImage extends React.Component {
